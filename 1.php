@@ -25,21 +25,21 @@
         echo "<br>";
 
         for($counter = 0 ; $counter < 5; $counter++) {
-            echo '<h1>the counter is: ' . $counter . '</h1>';
+            echo '<h3>the counter is: ' . $counter . '</h3>';
         }
         for($counter = 0 ; $counter < 5; $counter++) {
             ?>
-            <h1>the counter is: <?php echo $counter; ?></h1>
+            <h3>the counter is: <?php echo $counter; ?></h3>
             <?php
         }
         for($counter = 0 ; $counter < 5; $counter++) {
             ?>
-            <h1>the counter is: <?= $counter; ?></h1>
+            <h3>the counter is: <?= $counter; ?></h3>
             <?php
         }
         for($counter = 0 ; $counter < 5; $counter++):
             ?>
-            <h1>the counter is: <?= $counter; ?></h1>
+            <h3>the counter is: <?= $counter; ?></h3>
             <?php endfor;
         $names = ["abebe","kebede","chala"];
         foreach ($names as $name){
@@ -48,15 +48,21 @@
 
         $counter = 0;
         while ($counter < 10) {
-            echo '<h1>the counter is: ' . $counter . '</h1>';
+            echo '<h3>the counter is: ' . $counter . '</h3>';
             $counter++;
         }
         echo "<br>";
         $counter = 0;
         do {
-            echo '<h1>the counter is: ' . $counter . '</h1>';
+            echo '<h3>the counter is: ' . $counter . '</h3>';
             $counter++;
         } while ($counter < 10);
+
+        echo "<br>";
+        function add($a, $b) {
+            return $a + $b;
+        }
+        echo "the sum of 5 and 10 is: " . add(5, 10);
     ?>
 </body>
 </html>
