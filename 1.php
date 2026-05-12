@@ -11,6 +11,7 @@
         // welcome to php programming
         echo "hello world";
         echo "<br>";
+
         // sum of two numbers
         $sum = 5 + 10;
         echo "the sum of 5 and 10 is: " . $sum;
@@ -25,6 +26,7 @@
         }
 
         echo "<br>";
+
         // for loop with different syntax
         for($counter = 0 ; $counter < 5; $counter++) {
             echo '<h3>the counter is: ' . $counter . '</h3>';
@@ -49,12 +51,14 @@
         foreach ($names as $name){
             echo '<h3> '.$name.'</h3>';
         } 
+
         // while loop
         $counter = 0;
         while ($counter < 10) {
             echo '<h3>the counter is: ' . $counter . '</h3>';
             $counter++;
         }
+
         // do while loop
         echo "<br>";
         $counter = 0;
@@ -64,6 +68,7 @@
         } while ($counter < 10);
 
         echo "<br>";
+        
         // function definition and call
         function add($a, $b) {
             return $a + $b;
@@ -89,14 +94,25 @@
         }
         // multidimensional array
         $student =array(
-            array("ermias",22,"software"."<br>"),
-            array("dawit",21,"software"."<br>"),
-            array("ebba",20,"software"."<br>")
+            array("ermias ",22," software"."<br>"),
+            array("dawit ",21," software"."<br>"),
+            array("ebba ",20," software"."<br>")
             );
         for($i=0; $i<3; $i++){
             for($j=0; $j<3; $j++){
                 echo $student[$i][$j];
             }
+        }
+        echo "<br>";
+        $student =array(
+            array("name"=>"ermias","age"=>22,"dept"=>"software"),
+            array("name"=>"dawit","age"=>21,"dept"=>"software"),
+            array("name"=>"ebba","age"=>20,"dept"=>"software")
+            );
+        foreach($student as $row){
+            echo '<h3>name = '.$row['name'].'<br></h3>';
+            echo '<h3>age = '.$row['age'].'<br></h3>';
+            echo '<h3>dept = '.$row['dept'].'<br><br></h3>';
         }
     ?>
 </body>
