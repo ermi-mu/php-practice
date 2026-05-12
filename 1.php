@@ -27,6 +27,11 @@
         for($counter = 0 ; $counter < 5; $counter++) {
             echo '<h1>the counter is: ' . $counter . '</h1>';
         }
+        for($counter = 0 ; $counter < 5; $counter++) {
+            ?>
+            <h1>the counter is: <?php echo $counter; ?></h1>
+            <?php
+        }
     ?>
 </body>
 </html>
