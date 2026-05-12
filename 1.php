@@ -32,6 +32,20 @@
             <h1>the counter is: <?php echo $counter; ?></h1>
             <?php
         }
+        for($counter = 0 ; $counter < 5; $counter++) {
+            ?>
+            <h1>the counter is: <?= $counter; ?></h1>
+            <?php
+        }
+        for($counter = 0 ; $counter < 5; $counter++):
+            ?>
+            <h1>the counter is: <?= $counter; ?></h1>
+            <?php endfor
+        echo "<br>";
+        $names = ["abebe","kebede","chala"];
+        foreach ($names as $name){
+            echo '<h3> '.$name.'</h3>';
+        } 
     ?>
 </body>
 </html>
