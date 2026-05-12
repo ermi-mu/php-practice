@@ -9,9 +9,9 @@
     <<h1>my first php page</h1>
     <?php
         echo "hello world";
-        echo "<br>;
+        echo "<br>";
         $sum = 5 + 10;
-        echo "<br>the sum of 5 and 10 is: " . $sum;
+        echo "the sum of 5 and 10 is: " . $sum;
         echo "<br>";
 
         if ($sum > 10) {
