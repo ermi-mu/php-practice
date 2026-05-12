@@ -45,6 +45,18 @@
         foreach ($names as $name){
             echo '<h3> '.$name.'</h3>';
         } 
+
+        $counter = 0;
+        while ($counter < 10) {
+            echo '<h1>the counter is: ' . $counter . '</h1>';
+            $counter++;
+        }
+        echo "<br>";
+        $counter = 0;
+        do {
+            echo '<h1>the counter is: ' . $counter . '</h1>';
+            $counter++;
+        } while ($counter < 10);
     ?>
 </body>
 </html>
