@@ -21,6 +21,12 @@
         } else {
             echo "the sum is less than 10";
         }
+
+        echo "<br>";
+
+        for($counter = 0 ; $counter < 5; $counter++) {
+            echo '<h1>the counter is: ' . $counter . '</h1>';
+        }
     ?>
 </body>
 </html>
