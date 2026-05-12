@@ -81,6 +81,23 @@
         $students = ["abebe","kebede","chala"];
         $age = array("abebe" => 20, "kebede" => 22, "chala" => 21);
         echo "the age of abebe is: " . $age["abebe"];
+        $age["abebe"]= 25; // change abebe's age to 25
+
+        $students= array("name"=>"ermias", "age"=>22 , "dept"=>"software engineering");
+        foreach($students as $key => $value){
+            echo '<h3> the '.$key.' is: '.$value.'</h3>';
+        }
+        // multidimensional array
+        $student =array(
+            array("ermias",22,"software"."<br>"),
+            array("dawit",21,"software"."<br>"),
+            array("ebba",20,"software"."<br>")
+            );
+        for($i=0; $i<3; $i++){
+            for($j=0; $j<3; $j++){
+                echo $student[$i][$j];
+            }
+        }
     ?>
 </body>
 </html>
